@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A layout example with a side menu that hides on mobile, just like the Pure website.">
+    <title>Javascript for Noobs &ndash; JS Essentials &ndash; Library</title>
+    
+    <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/pure-min.css" integrity="sha384-" crossorigin="anonymous">
+    
+    
+    
+        <!--[if lte IE 8]>
+            <link rel="stylesheet" href="css/layouts/side-menu-old-ie.css">
+        <![endif]-->
+        <!--[if gt IE 8]><!-->
+            <link rel="stylesheet" href="css/layouts/side-menu.css">
+        <!--<![endif]-->
+</head>
+<body>
+
+
+
+
+
+
+<div id="layout">
+    <!-- Menu toggle -->
+    <a href="#menu" id="menuLink" class="menu-link">
+        <!-- Hamburger icon -->
+        <span></span>
+    </a>
+
+    <div id="menu">
+        <div class="pure-menu">
+            <a class="pure-menu-heading" href="#">JSforNoobs</a>
+
+            <ul class="pure-menu-list">
+                <li class="pure-menu-item"><a href="./index.html" class="pure-menu-link">Home</a></li>
+
+                <li class="pure-menu-item"><a href="./docs.html" class="pure-menu-link">Docs</a></li>
+                <li class="pure-menu-item"><a href="#" class="pure-menu-link">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="main">
+        <div class="header">
+            <h1>Javascript for Noobs Library</h1>
+            <h2>&ndash; Docs &ndash;</h2>
+        </div>
+
+        <div class="content">
+            <h2 class="content-subhead">Change inner content of html elements</h2>
+            <p>
+                 <code>setHtmlOf(id, value);</code>
+            </p>
+            <h2 class="content-subhead">Get inner content of html elements</h2>
+            <p>
+                 <code>getHtmlOf(id);</code>
+            </p>
+            <h2 class="content-subhead">Change value of attribute of html elements</h2>
+            <p>
+                 <code>setValueOfAttribute(id, attribute, value);</code>
+            </p>
+            <h2 class="content-subhead">Get value of attribute of html elements</h2>
+            <p>
+                 <code>getValueOfAttribute(id, attribute);</code>
+            </p>
+            <h2 class="content-subhead">Set color of html elements</h2>
+            <p>
+                 <code>setColorOf(id, color);</code>
+            </p>
+            <h2 class="content-subhead">Set background color of html elements</h2>
+            <p>
+                 <code>setBackGroundColorOf(id, color);</code>
+            </p>
+            <h2 class="content-subhead">Set width of html elements</h2>
+            <p>
+                 <code>setWidthOf(id, width);</code>
+            </p>
+            <h2 class="content-subhead">Set inner content of html elements from input fields</h2>
+            <p>
+                 <code>setHtmlOfFrom(idOf, idFrom);</code>
+            </p>
+            <h2 class="content-subhead">Validate form before submit</h2>
+            <p>
+                <code>input onclick="return validateFormBeforeSubmit('formID')";</code>
+            </p>
+            <h2 class="content-subhead">There are times when you prefer a given functionality only happen once, similar to the way you'd use an onload event.</h2>
+            <p>
+                <code>once(fn, context);</code>
+            </p>
+            <h2 class="content-subhead">There are times when you prefer a given functionality only happen once, similar to the way you'd use an onload event.</h2>
+            <p>
+                <code>getAbsoluteUrl('/something'); // https://website.name/something</code>
+            </p>
+            <h2 class="content-subhead">Get cookie</h2>
+            <p>
+                <code>getCookie(name);</code>
+            </p>
+            <h2 class="content-subhead">Scroll to html element</h2>
+            <p>
+                <code>scrollTo(id);</code>
+            </p>
+            <h2 class="content-subhead">post variables with POST requests</h2>
+            <p>
+                <code>receiveFromPostRequest(backendPageUrl, vars, idOutput);</code><br>
+                usage receiveFromPostRequest("serverpage.com", "var1=33&var2=john, "outputDiv")
+            </p>
+
+            <h2 class="content-subhead">Help us and Contribute</h2>
+            <p>
+                Every good JS programmer has his ready to use script, share it with us and help the community.
+            </p>
+        </div>
+    </div>
+</div>
+
+
+
+
+<script src="js/ui.js"></script>
+
+</body>
+</html>
